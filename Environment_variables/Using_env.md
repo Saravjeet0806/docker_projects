@@ -1,0 +1,1 @@
+docker run -it --rm --env-file=.env alpine:latest env
