@@ -11,4 +11,4 @@ eg-
 docker run -d \--name my-container \ -v v1:/data1 \ -v v2:/data2 \ nginx
 
 
-Yes, multiple containers can use the same named volume in Docker. By mounting the same volume (e.g., my-volume) into different containers, they can share data. For example, if both containers are mounted to /data, any changes made by one container will be visible to the other. Volumes persist independently of containers, so even if a container is removed, the data remains intact and can be reused by other containers. However, caution is needed when both containers are writing to the same data to avoid conflicts or data corruption.
+Yes, multiple containers can use the same named volume in Docker. By mounting the same volume (e.g., my-volume) into different containers, they can share data. For example, if both containers areunted to /data, any changes made by one container will be visible to the other. Volumes persist independently of containers, so even if a container is removed, the data remains intact and can be reused by other containers. However, caution is needed when both containers are writing to the same data to avoid conflicts or data corruption.
