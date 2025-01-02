@@ -6,7 +6,7 @@ docker volume prune -- deletes unused volumes; //stop and kill the container to 
 docker run -d --name my-container --mount source=my-volume,target=/path/in/container my-image //to attach a volume to container
 docker system df -- to check size of each resource
 docker system df -v -- to get detailed info of memory used by each resource
-
+ 
 
 
 No, Docker does not allow adding a new volume to a running container directly. Volumes must be defined when the container is created. However, there are ways to achieve the goal of mounting multiple volumes, including adding another volume to the same container. We have to recreate the container with both volumes.  
