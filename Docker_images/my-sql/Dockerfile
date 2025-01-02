@@ -1,4 +1,4 @@
-FROM komljen/ubuntu
+FROM ubuntu:22.04
 
 LABEL maintainer="Saravjeet Singh <www.saravjeetofficial@gmail.com>"
 
